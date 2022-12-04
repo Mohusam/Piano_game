@@ -2,9 +2,9 @@ let pianoKeys = document.querySelectorAll(".piano-keys .key");
 let volume = document.querySelector(".volume-slider input");
 let keyCheckbox = document.querySelector(".keys-checkbox input");
 let allKeys = [];
-let audio = new Audio("../tunes/a.wav"); // by default, audio src is "a" tune
+let audio = new Audio(".././tunes/a.wav"); // by default, audio src is "a" tune
 let playtune = (key) => {
-  audio.src = `../tunes/${key}.wav`;
+  audio.src = `.././tunes/${key}.wav`;
   audio.play(); // Playing audio
   console.log(allKeys);
   let clickedKey = document.querySelector(`[data-key=${key}]`);
