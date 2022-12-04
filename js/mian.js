@@ -2,11 +2,9 @@ let pianoKeys = document.querySelectorAll(".piano-keys .key");
 let volume = document.querySelector(".volume-slider input");
 let keyCheckbox = document.querySelector(".keys-checkbox input");
 let allKeys = [];
-let audio = new Audio(
-  "https://github.com/Mohusam/Piano_game/blob/main/tunes/a.wav"
-); // by default, audio src is "a" tune
+let audio = new Audio("https://mohusam.github.io/tunes/a.wav"); // by default, audio src is "a" tune
 let playtune = (key) => {
-  audio.src = `https://github.com/Mohusam/Piano_game/blob/main/tunes/${key}.wav`;
+  audio.src = `https://mohusam.github.io/tunes/${key}.wav`;
   audio.play(); // Playing audio
   console.log(allKeys);
   let clickedKey = document.querySelector(`[data-key=${key}]`);
